@@ -1,0 +1,30 @@
+target/
+!.mvn/wrapper/maven-wrapper.jar
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+fastjee-logs
+
+### webapp ###
+npm-debug.log
+node_modules
+.project
+.vscode
+.history
+.idea
+.DS_Store
+\.settings/
+
+### SysLog ###
+*.log
