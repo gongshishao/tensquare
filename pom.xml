@@ -9,6 +9,7 @@
 	<modules>
 		<module>tensquare_common</module>
 		<module>tensquare_base</module>
+		<module>tensquare_recurit</module>
 	</modules>
 	<packaging>pom</packaging>
 
