@@ -1,4 +1,4 @@
-package util;
+package com.tensquare.util;
 
 import java.lang.management.ManagementFactory;
 import java.net.InetAddress;
@@ -159,5 +159,11 @@ public class IdWorker {
         return id;
     }
 
+    public static void main(String[] args) throws Exception {
+        Class<?> idWord = Class.forName("com.tensquare.util.IdWorker");
+        IdWorker o = (IdWorker) idWord.newInstance();
+        long l = o.nextId();
+        System.out.println(l);
+    }
 
 }

@@ -1,5 +1,7 @@
 package com.tensquare.recurit.pojo;
 
+import lombok.Data;
+
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
@@ -11,6 +13,7 @@ import java.io.Serializable;
  */
 @Entity
 @Table(name="tb_enterprise")
+@Data
 public class Enterprise implements Serializable{
 
 	@Id

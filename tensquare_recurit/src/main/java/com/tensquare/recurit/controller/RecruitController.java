@@ -1,5 +1,4 @@
 package com.tensquare.recurit.controller;
-import java.util.List;
 import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,9 +13,9 @@ import org.springframework.web.bind.annotation.RestController;
 import com.tensquare.recurit.pojo.Recruit;
 import com.tensquare.recurit.service.RecruitService;
 
-import entity.PageResult;
-import entity.Result;
-import entity.StatusCode;
+import com.tensquare.entity.PageResult;
+import com.tensquare.entity.Result;
+import com.tensquare.entity.StatusCode;
 /**
  * 控制器层
  * @author Administrator
@@ -103,6 +102,11 @@ public class RecruitController {
 	public Result delete(@PathVariable String id ){
 		recruitService.deleteById(id);
 		return new Result(true,StatusCode.OK,"删除成功");
+	}
+
+	@RequestMapping(value = "/search/recommend", method = RequestMethod.GET)
+	public Result recommend() {
+		return new Result(true, StatusCode.OK,"查询成功",recruitService.findTop4ByStateOrderByCreatetimeDesc(("2")));
 	}
 	
 }

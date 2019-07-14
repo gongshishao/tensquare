@@ -54,6 +54,11 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+		<dependency>
+			<groupId>cglib</groupId>
+			<artifactId>cglib</artifactId>
+			<version>LATEST</version>
+		</dependency>
 	</dependencies>
 	
 	<repositories>
